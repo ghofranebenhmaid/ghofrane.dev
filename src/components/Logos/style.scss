@@ -1,0 +1,49 @@
+.container-logos {
+   ul {
+      border-top: 0.5px solid #ccc;
+      position: relative;
+
+      .row {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: #eef0e2;
+         margin: 20px 0 20px 0;
+         &:hover {
+            color: rgb(255, 255, 255);
+            // font-style: italic;
+            -webkit-text-stroke: 1px black;
+            font-weight: 400;
+         }
+         h1 {
+            margin: 20px 0 20px 0;
+            font-size: 3rem;
+            text-align: center;
+            font-weight: 400;
+            // cursor: pointer;
+            transition: 300ms;
+         }
+         p {
+            opacity: 0;
+         }
+      }
+      .floating {
+         pointer-events: none;
+         z-index: 10;
+         overflow: hidden;
+         opacity: 0;
+
+         top: 0px;
+         left: 0px;
+
+         // transform: translate(50%, 50%);
+         //transform: translateX(0) translateY(0);
+
+         position: absolute;
+         img {
+            // border-radius: 50%;
+            width: 200px;
+         }
+      }
+   }
+}

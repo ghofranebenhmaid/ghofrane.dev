@@ -1,0 +1,134 @@
+$desktop: 1220px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
+
+$gray: rgb(171, 171, 171);
+$gray-charcoal: rgb(50, 50, 50);
+.logos {
+   width: 60vw;
+   margin: 250px auto;
+   height: auto;
+   // display: flex;
+   // align-items: center;
+   // justify-content: center;
+   span {
+      color: rgb(255, 255, 255);
+      position: absolute;
+      font-size: 18vw;
+      font-weight: 700;
+      text-align: center;
+      z-index: -1;
+      text-shadow: 0 0 29px rgba(0, 0, 0, 0.05);
+      top: 0;
+      @media (max-width: $tablet) {
+         display: none;
+      }
+      @media (max-width: $phone) {
+         display: none;
+      }
+   }
+   @media (max-width: $laptop) {
+      max-width: 90vw;
+      width: 100%;
+   }
+   @media (max-width: $tablet) {
+      max-width: 90vw;
+      width: 100%;
+   }
+   @media (max-width: $phone) {
+      max-width: 90vw;
+      width: 100%;
+   }
+   .section-grid {
+      // text-shadow: 0 0 29px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .container {
+         // display: flex;
+         // justify-content: center;
+         // align-items: center;
+         // flex-direction: column;
+         margin: 2rem 2rem 2rem 0;
+
+         @media (max-width: $laptop) {
+         }
+         @media (max-width: $tablet) {
+            flex-direction: column;
+            margin-bottom: 1rem;
+         }
+         @media (max-width: $phone) {
+            flex-direction: column;
+         }
+
+         .wrapper {
+            display: flex;
+            overflow: hidden;
+            border-radius: 10px;
+            // width: 100%;
+            // cursor: pointer;
+            // margin-bottom: 1rem;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+
+            &:hover {
+               box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+            }
+            img {
+               width: 300px;
+               // height: 100%;
+               overflow: hidden;
+               border-radius: 10px;
+
+               filter: grayscale(0%);
+            }
+
+            @media (max-width: $tablet) {
+               margin-bottom: 2rem;
+            }
+            @media (max-width: $phone) {
+               margin-bottom: 1.5rem;
+            }
+         }
+         .description {
+            // padding: 0 60px 0 60px;
+            margin-top: 1rem;
+
+            h2 {
+               font-size: 1.3rem;
+            }
+            p {
+               opacity: 0.5;
+               font-size: 1.1rem;
+            }
+            a {
+               text-decoration-line: none;
+               color: #000;
+               font-size: 1rem;
+               // cursor: pointer;
+               transition: all 600ms;
+               display: inline-block;
+
+               &::after {
+                  content: '';
+                  display: block;
+                  width: 0;
+                  height: 2px;
+                  background: #000;
+                  transition: width 0.3s;
+               }
+
+               &:hover::after {
+                  width: 100%;
+                  transition: width 0.3s;
+               }
+            }
+         }
+         &:nth-child(even) {
+            // direction: rtl;
+         }
+      }
+   }
+}
