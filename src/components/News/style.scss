@@ -1,0 +1,36 @@
+section {
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   font-family: helvetica;
+   text-transform: uppercase;
+   overflow-x: hidden;
+   div {
+      display: flex;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      min-width: 100%;
+      .news-message {
+         display: flex;
+         flex-shrink: 1;
+         height: 150px;
+         align-items: center;
+         animation: slide-left 20s linear infinite;
+         p {
+            font-size: 4.5em;
+            font-weight: 100;
+            padding-left: 0.5em;
+         }
+
+         @keyframes slide-left {
+            from {
+               -webkit-transform: translateX(0);
+               transform: translateX(0);
+            }
+            to {
+               -webkit-transform: translateX(-100%);
+               transform: translateX(-100%);
+            }
+         }
+      }
+   }
+}
