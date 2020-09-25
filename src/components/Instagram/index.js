@@ -20,15 +20,13 @@ const Instagram = () => {
 
    return (
       <div className='instagram-container'>
-         {istagram.map((data, id) => (
+         {istagram.slice(4, 7).map((data, id) => (
             <div key={id} className='container'>
                <div className='box-image'>
                   <img src={data.media_url} alt={data.id} />
                   <motion.div whileHover={{ opacity: 1 }} className='box-text'>
                      <FaInstagram />
-
                      <p>{data.media_type}</p>
-
                      <p>{data.caption}</p>
                   </motion.div>
                </div>
