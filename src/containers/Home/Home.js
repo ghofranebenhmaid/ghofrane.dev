@@ -69,13 +69,15 @@ function Home() {
                <ProjectSection />
                <SkillsSection />
                {/*   <Title title='Projects Section' text='PHOTOGRAPHY & LOGOs' />
-               <Section />
+               <Section />*/}
                <Title
                   title='Open Source Exercices'
                   text='github Repositories'
-               />*/}
-               <GithubRepo /> 
+               />
+               <GithubRepo />
                {/* <News /> */}
+               <Title title='Projects Section' text='PHOTOGRAPHY & LOGOs' />
+
                <Instagram />
             </div>
          </div>
