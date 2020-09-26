@@ -20,7 +20,7 @@ const Instagram = () => {
 
    return (
       <div className='instagram-container'>
-         {istagram.map((data, id) => (
+         {istagram.slice(4, 7).map((data, id) => (
             <div key={id} className='container'>
                <div className='box-image'>
                   <img src={data.media_url} alt={data.id} />

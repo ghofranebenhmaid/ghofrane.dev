@@ -30,6 +30,7 @@ const data = [
    {
       id: 2,
       src: MealSharing,
+
       codeSource: 'https://github.com/ghofranebenhmaid/mealinfo',
       title: 'mealinfo:',
       discription:
@@ -66,11 +67,11 @@ function ProjectSection() {
                duration: 1,
                autoAlpha: 1,
                ease: Power3.easeOut,
-               y: -30,
+               y: -0,
                scrollTrigger: {
                   id: `section-${index + 1}`,
                   trigger: el,
-                  start: 'top center+=350',
+                  start: 'top center+=150',
                   toggleActions: 'play none none reverse',
                },
             }
@@ -84,58 +85,52 @@ function ProjectSection() {
       }
    };
    return (
-      <div className='section-design2' id='project'>
-         <div className='section-grid'>
-            {data.map((data, id) => (
-               <div key={id} className='container'>
-                  <div className='project-info' ref={addToRefs}>
-                     <h4>{data.title}</h4>
-                     <p>{data.discription}</p>
+      <div className='card' id='project'>
+         {data.map((data, id) => (
+            <div key={id} className='container'>
+               <div className='project-info' ref={addToRefs}>
+                  <h1>{data.title}</h1>
+                  <p>{data.discription}</p>
 
-                     <ul>
-                        {data.language && data.language.length > 0
-                           ? data.language.map((item) => {
-                                return (
-                                   <li key={item.id}>
-                                      <span>&#8250;</span>
-                                      {item}
-                                   </li>
-                                );
-                             })
-                           : 'Loading...'}
-                     </ul>
+                  <ul>
+                     {data.language && data.language.length > 0
+                        ? data.language.map((item) => {
+                             return (
+                                <li key={item.id}>
+                                   <span>&#8250;</span>
+                                   {item}
+                                </li>
+                             );
+                          })
+                        : 'Loading...'}
+                  </ul>
 
-                     <div className='work_links'>
-                        <a
-                           className='project-link'
-                           href={data.web}
-                           target='blank'
-                        >
-                           Visit Site <span>&rarr;</span>
-                        </a>
-                        <a
-                           className='work_code'
-                           href={data.codeSource}
-                           title='View Source Code'
-                           target='blank'
-                        >
-                           <FaGithub />
-                        </a>
-                     </div>
-                  </div>
-                  <div className='wrapper fadeIn' ref={addToRefs}>
-                     <motion.img
-                        transition={transition}
-                        whileHover={{ scale: 1.03 }}
-                        src={data.src}
-                        width='100%'
-                        height='100%'
-                        alt={data.name}
-                     />
+                  <div className='work_links'>
+                     <a className='project-link' href={data.web} target='blank'>
+                        Visit Site <span>&rarr;</span>
+                     </a>
+                     <a
+                        className='work_code'
+                        href={data.codeSource}
+                        title='View Source Code'
+                        target='blank'
+                     >
+                        <FaGithub />
+                     </a>
                   </div>
                </div>
-            ))}
-         </div>
+               <div className='project-image ' ref={addToRefs}>
+                  <motion.img
+                     transition={transition}
+                     whileHover={{ scale: 1.03 }}
+                     src={data.src}
+                     width='100%'
+                     height='100%'
+                     alt={data.name}
+                  />
+               </div>
+            </div>
+         ))}
       </div>
    );
 }
