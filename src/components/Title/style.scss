@@ -4,31 +4,10 @@ $tablet: 768px;
 $phone: 480px;
 
 .section-title {
-   margin: 0px 0 50px 0;
-   display: flex;
-   justify-content: space-between;
-   @media (max-width: $laptop) {
-      // flex-direction: column;
-   }
-   @media (max-width: $tablet) {
-      flex-direction: column;
-   }
-   @media (max-width: $phone) {
-      flex-direction: column;
-   }
+   margin:50px 0;
    .section__title {
       h1 {
          font-size: 3rem;
-         // margin-top: 15px;
-         @media (max-width: $laptop) {
-            font-size: 2.5rem;
-         }
-         @media (max-width: $tablet) {
-            font-size: 2rem;
-         }
-         @media (max-width: $phone) {
-            font-size: 1.8rem;
-         }
       }
       a {
          font-weight: 600;
@@ -45,43 +24,58 @@ $phone: 480px;
          font-size: 1.12rem;
          letter-spacing: 7px;
          opacity: 0.5;
-         @media (max-width: $laptop) {
-            font-size: 1rem;
+      }
+   }
+}
+
+@media (max-width: $desktop) {
+   .section-title {
+      .section__title {
+         h1 {
+            font-size: 2.5rem;
          }
-         @media (max-width: $tablet) {
-            font-size: 0.8rem;
-         }
-         @media (max-width: $phone) {
-            font-size: 0.6rem;
+         p {
+            font-size: 1.4rem;
          }
       }
    }
-   .section-paragraf {
-      width: 50%;
-      @media (max-width: $laptop) {
-         width: 100%;
-         margin-top: 45px;
-      }
-      @media (max-width: $tablet) {
-         width: 100%;
-
-         margin-top: 45px;
-      }
-      @media (max-width: $phone) {
-         width: 100%;
-         margin-top: 45px;
-      }
-      p {
-         font-size: 1.5rem;
-         color: rgba(0, 0, 0, 0.468);
-         @media (max-width: $laptop) {
-            font-size: 1.5rem;
+}
+@media (max-width: $laptop) {
+   .section-title {
+      .section__title {
+         h1 {
+            font-size: 2rem;
          }
-         @media (max-width: $tablet) {
+         p {
             font-size: 1.2rem;
          }
-         @media (max-width: $phone) {
+      }
+   }
+}
+@media (max-width: $tablet) {
+   .section-title {
+      width: 100%;
+      flex-direction: column;
+      .section__title {
+         h1 {
+            font-size: 2rem;
+         }
+         p {
             font-size: 1rem;
+         }
+      }
+   }
+}
+@media (max-width: $phone) {
+   .section-title {
+      flex-direction: column;
+      width: 100%;
+      .section__title {
+         h1 {
+            font-size: 1.5rem;
+         }
+         p {
+            font-size: 0.7rem;
          }
       }
    }
