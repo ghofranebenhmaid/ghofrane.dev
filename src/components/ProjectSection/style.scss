@@ -8,23 +8,27 @@ $phone: 480px;
 
 .card {
    // width: 65vw;
-   margin: 0 auto;
+   margin: 200px auto;
    .container {
       display: flex;
       align-items: center;
-      justify-content: space-around;
-      margin-bottom: 50px;
+      justify-content: space-between;
+      margin-bottom: 250px;
       .project-info {
-         flex: 0.7;
+         flex: 0.5;
          width: 500px;
          margin: 20px 0;
          h1 {
-            font-size: 1.5rem;
+            font-size: 1.9rem;
+            font-weight: 600;
          }
          ul,
          p {
             margin: 20px 0;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            line-height: 45px;
+            font-weight: 200;
+            opacity: 0.5;
          }
          .work_links {
             font-size: 1.2rem;
@@ -55,7 +59,20 @@ $phone: 480px;
 //? Mobile
 @media (max-width: $desktop) {
    .card {
+      margin: 50px auto;
+
       .container {
+         justify-content: space-between;
+         margin-bottom: 50px;
+
+         .project-info {
+            flex: 0.8;
+            ul,
+            p {
+               font-size: 1.2rem;
+               line-height: 35px;
+            }
+         }
          .project-image {
             width: 500px;
          }
