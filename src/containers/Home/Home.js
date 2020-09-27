@@ -15,6 +15,8 @@ import WorkSection from '../../components/WorkSection';
 import ProjectSection from '../../components/ProjectSection';
 // import ProjectSection from '../../components/ProjectSection';
 
+import resume from '../../assets/ghofranebenhmaid.pdf';
+
 function Home() {
    // let h0 = useRef(null);
    // let fadeUp = useRef(null);
@@ -46,7 +48,7 @@ function Home() {
                      className='link-text'
                   >
                      <h2>
-                        <Link className='link' to='#project'>
+                        <Link className='link' to={resume} target='blank'>
                            View Resume
                         </Link>
                      </h2>
