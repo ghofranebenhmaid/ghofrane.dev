@@ -22,6 +22,7 @@ const Instagram = () => {
       <div className='instagram-container'>
          {istagram.slice(4, 7).map((data, id) => (
             <div key={id} className='container'>
+
                <a href={data.permalink} target='blank'>
                   <div className='box-image'>
                      <img src={data.media_url} alt={data.id} />
@@ -36,6 +37,7 @@ const Instagram = () => {
                      </motion.div>
                   </div>
                </a>
+
             </div>
          ))}
       </div>

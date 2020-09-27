@@ -62,18 +62,18 @@ function Home() {
                <ProjectSection />
                <Title title='Projects Section' text='PHOTOGRAPHY & LOGOs' />
                <SkillsSection />
-               {/*  
-               <Section />
-               {/* <News /> */}
+
                <Title
                   title='Open Source Exercices'
                   text='github Repositories'
                />
                <GithubRepo />
+
                <Title
                   title='Instagram'
                   text='Instagram'
                />
+
                <Instagram />
             </div>
          </div>
