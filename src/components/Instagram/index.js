@@ -26,9 +26,7 @@ const Instagram = () => {
                   <img src={data.media_url} alt={data.id} />
                   <motion.div whileHover={{ opacity: 1 }} className='box-text'>
                      <FaInstagram />
-
                      <p>{data.media_type}</p>
-
                      <p>{data.caption}</p>
                   </motion.div>
                </div>
