@@ -22,7 +22,7 @@ function Home() {
 
    useEffect(() => {
       TweenMax.staggerFrom(
-         [ h3],
+         [h3],
          1,
          { opacity: 0, y: 15, ease: Power3.easeInOut },
          0.8
@@ -36,7 +36,8 @@ function Home() {
                <div className='main'>
                   <StrokeAnimationGhofrane />
                   <div className='main-text'>
-                        <Title title='Website and user interface designer' />
+                     {/* <Title title='Website and user interface designer' /> */}
+                     <h1>Website and user interface designer</h1>
                   </div>
                   <div
                      ref={(el) => {
@@ -69,10 +70,7 @@ function Home() {
                />
                <GithubRepo />
 
-               <Title
-                  title='Instagram'
-                  text='Instagram'
-               />
+               <Title title='Instagram' text='Instagram' />
 
                <Instagram />
             </div>
