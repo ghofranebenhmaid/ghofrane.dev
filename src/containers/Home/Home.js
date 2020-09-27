@@ -17,12 +17,12 @@ import ProjectSection from '../../components/ProjectSection';
 
 function Home() {
    // let h0 = useRef(null);
-   let fadeUp = useRef(null);
+   // let fadeUp = useRef(null);
    let h3 = useRef(null);
 
    useEffect(() => {
       TweenMax.staggerFrom(
-         [fadeUp, h3],
+         [ h3],
          1,
          { opacity: 0, y: 15, ease: Power3.easeInOut },
          0.8
@@ -36,13 +36,7 @@ function Home() {
                <div className='main'>
                   <StrokeAnimationGhofrane />
                   <div className='main-text'>
-                     <h1
-                        ref={(el) => {
-                           fadeUp = el;
-                        }}
-                     >
-                        Website and user interface designer
-                     </h1>
+                        <Title title='Website and user interface designer' />
                   </div>
                   <div
                      ref={(el) => {
@@ -52,10 +46,9 @@ function Home() {
                   >
                      <h2>
                         <Link className='link' to='#project'>
-                           View Projects
+                           View Resume
                         </Link>
                      </h2>
-                     {/* <a href='#project' title='View Source Code'></a> */}
                      <p>or</p>
                      <h2>
                         <Link className='link' to='/about'>
@@ -67,16 +60,19 @@ function Home() {
                {/* <WorkSection /> */}
                <Title title='Projects Section' text='SELECTED PROJECTS' />
                <ProjectSection />
+               <Title title='Projects Section' text='PHOTOGRAPHY & LOGOs' />
                <SkillsSection />
-               {/*   <Title title='Projects Section' text='PHOTOGRAPHY & LOGOs' />
-               <Section />*/}
+
                <Title
                   title='Open Source Exercices'
                   text='github Repositories'
                />
                <GithubRepo />
-               {/* <News /> */}
-               <Title title='Projects Section' text='PHOTOGRAPHY & LOGOs' />
+
+               <Title
+                  title='Instagram'
+                  text='Instagram'
+               />
 
                <Instagram />
             </div>

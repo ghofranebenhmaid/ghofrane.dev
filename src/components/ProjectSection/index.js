@@ -67,11 +67,11 @@ function ProjectSection() {
                duration: 1,
                autoAlpha: 1,
                ease: Power3.easeOut,
-               y: -0,
+               y: -30,
                scrollTrigger: {
                   id: `section-${index + 1}`,
                   trigger: el,
-                  start: 'top center+=150',
+                  start: 'top center+=300',
                   toggleActions: 'play none none reverse',
                },
             }

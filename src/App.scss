@@ -76,6 +76,12 @@ header {
       &:hover ~ .cursor {
          transform: scale(5);
       }
+      @media (max-width: $desktop) {
+         max-width: 90vw;
+      }
+      @media (max-width: $laptop) {
+         max-width: 90vw;
+      }
       @media (max-width: $tablet) {
          max-width: 90vw;
       }
