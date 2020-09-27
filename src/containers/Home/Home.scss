@@ -45,8 +45,8 @@ $phone: 480px;
             .link-text {
                display: flex;
                align-items: center;
+               margin-top: 1.3rem;
                h2 {
-                  margin: 20px;
                   font-size: 1.3rem;
                   font-weight: 600;
                   color: rgb(0, 0, 0);
@@ -76,7 +76,8 @@ $phone: 480px;
 
                p {
                   opacity: 0.5;
-                  font-size: 20px;
+                  font-size: 1rem;
+                  margin: 0 20px;
                }
             }
          }
@@ -91,6 +92,8 @@ $phone: 480px;
          .wrapper {
             .main {
                .link-text {
+                  h2 {
+                  }
                }
             }
          }
