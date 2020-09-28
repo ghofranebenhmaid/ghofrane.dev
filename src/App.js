@@ -36,10 +36,10 @@ function App() {
       return () => {
          window.removeEventListener('scroll', toggle);
       };
-   });
+   }, []);
 
    let list = useRef();
-   const [hoverState, setHoverState] = useState(false);
+   const [hoverState, setHoverState] = useState(true);
    const { x, y } = useMousePosition();
    const [listPosition, setListPosition] = useState({
       top: 0,
@@ -59,10 +59,9 @@ function App() {
          <motion.div
             ref={list}
             onHoverStart={() => setHoverState(true)}
-            // onHoverEnd={() => setHoverState(true)}
+            onHoverEnd={() => setHoverState(true)}
             className='App'
          >
-
             <Header />
             <AnimatePresence>
                <Switch>
@@ -108,7 +107,7 @@ function App() {
             height='25'
             // viewBox='0 0 20 20'
          >
-            <circle className='cursor__inner' cx='12' cy='12' r='8' />
+            <circle className='cursor__inner' cx='10' cy='10' r='6' />
          </motion.svg>
       </Router>
    );
