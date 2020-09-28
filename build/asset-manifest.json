@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.90e44376.chunk.css",
+    "main.js": "/static/js/main.3066390a.chunk.js",
+    "main.js.map": "/static/js/main.3066390a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ccd75c66.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ccd75c66.js.map",
+    "static/js/2.12b1d3a4.chunk.js": "/static/js/2.12b1d3a4.chunk.js",
+    "static/js/2.12b1d3a4.chunk.js.map": "/static/js/2.12b1d3a4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3df28864e1525079f7ff140e37995e7d.js": "/precache-manifest.3df28864e1525079f7ff140e37995e7d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.90e44376.chunk.css.map": "/static/css/main.90e44376.chunk.css.map",
+    "static/js/2.12b1d3a4.chunk.js.LICENSE.txt": "/static/js/2.12b1d3a4.chunk.js.LICENSE.txt",
+    "static/media/brad-neathery-mGH253KbfaY-unsplash.jpg": "/static/media/brad-neathery-mGH253KbfaY-unsplash.16e6a314.jpg",
+    "static/media/coding.jpg": "/static/media/coding.53676804.jpg",
+    "static/media/ghofranebenhmaid.jpg": "/static/media/ghofranebenhmaid.25b3d89d.jpg",
+    "static/media/ghofranebenhmaid.pdf": "/static/media/ghofranebenhmaid.464a2e21.pdf",
+    "static/media/ghofranebh.png": "/static/media/ghofranebh.27edb5ab.png",
+    "static/media/iMac-Screen-1.png": "/static/media/iMac-Screen-1.3e6280c5.png",
+    "static/media/logo1-100.jpg": "/static/media/logo1-100.d97d3296.jpg",
+    "static/media/logo2-100.jpg": "/static/media/logo2-100.51c2b879.jpg",
+    "static/media/logo3-100.jpg": "/static/media/logo3-100.8455d7c8.jpg",
+    "static/media/logo4-100.jpg": "/static/media/logo4-100.d6febb19.jpg",
+    "static/media/logo5-100.jpg": "/static/media/logo5-100.01c26d70.jpg",
+    "static/media/logo6-100.jpg": "/static/media/logo6-100.b627f94a.jpg",
+    "static/media/logo7-100.jpg": "/static/media/logo7-100.d9850a55.jpg",
+    "static/media/mealshering.png": "/static/media/mealshering.5b3e06d8.png",
+    "static/media/photography.jpg": "/static/media/photography.b571d716.jpg",
+    "static/media/treasureHunt.png": "/static/media/treasureHunt.a18f0314.png",
+    "static/media/typographie.jpg": "/static/media/typographie.506a4a80.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ccd75c66.js",
+    "static/js/2.12b1d3a4.chunk.js",
+    "static/css/main.90e44376.chunk.css",
+    "static/js/main.3066390a.chunk.js"
+  ]
+}
