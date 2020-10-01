@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Expo, Power3 } from 'gsap';
 
-// import { staggerReveal, staggerRevealClose } from './assets/Animations';
+//import { staggerReveal, staggerRevealClose } from './assets/Animations';
 
 import useMousePosition from './assets/hooks/useMousePosition';
 

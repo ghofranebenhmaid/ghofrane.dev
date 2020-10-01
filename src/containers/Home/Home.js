@@ -10,7 +10,6 @@ import Title from '../../components/Title';
 
 import { Link } from 'react-router-dom';
 import SkillsSection from '../../components/SkillsSection';
-import Instagram from '../../components/Instagram';
 import WorkSection from '../../components/WorkSection';
 import ProjectSection from '../../components/ProjectSection';
 // import ProjectSection from '../../components/ProjectSection';
@@ -71,10 +70,6 @@ function Home() {
                   text='github Repositories'
                />
                <GithubRepo />
-
-               <Title title='Instagram' text='Instagram' />
-
-               <Instagram />
             </div>
          </div>
       </div>

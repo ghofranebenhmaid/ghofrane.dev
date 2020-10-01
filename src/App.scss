@@ -73,9 +73,7 @@ header {
       max-width: 90vw;
       width: 100%;
       margin: 0px auto;
-      &:hover ~ .cursor {
-         transform: scale(5);
-      }
+
       @media (max-width: $desktop) {
          max-width: 90vw;
       }
