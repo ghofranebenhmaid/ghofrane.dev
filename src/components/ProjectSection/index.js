@@ -24,18 +24,18 @@ const data = [
       name: 'logos',
       title: 'Treasure Hunt ',
       discription:
-         'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+         ' Final project in HackYourFuture. A Treasure Hunt game for kids, developed with an idea from CodeArt during an 8-week period, where we planned, designed, developed and deployed the game using Reactjs. The game are meant for kids parties, where an adult (host) can create a game for the kids, with a theme. The host can create posts and questions.The kids have to find the posts and answer the questions. ',
       language: ['HTML', 'CSS', 'JavaScript', 'Nodejs', 'React'],
    },
    {
       id: 2,
       src: MealSharing,
 
-      codeSource: 'https://github.com/ghofranebenhmaid/mealinfo',
+      codeSource: 'https://github.com/ghofranebenhmaid/mealinfo',y
       title: 'mealinfo:',
       discription:
          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-      language: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'Nodejs'],
+      language: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'Nodejs/Express'],
       web: 'https://hyf-meal-sharing-ghofrane.herokuapp.com/',
    },
    {
