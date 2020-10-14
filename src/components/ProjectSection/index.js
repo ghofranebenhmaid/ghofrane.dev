@@ -31,7 +31,7 @@ const data = [
       id: 2,
       src: MealSharing,
 
-      codeSource: 'https://github.com/ghofranebenhmaid/mealinfo',y
+      codeSource: 'https://github.com/ghofranebenhmaid/mealinfo',
       title: 'mealinfo:',
       discription:
          'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',

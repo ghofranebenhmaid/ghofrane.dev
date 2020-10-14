@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Expo, Power3 } from 'gsap';
 
-//import { staggerReveal, staggerRevealClose } from './assets/Animations';
+import AnimatedCursor from "react-animated-cursor"
+
 
 import useMousePosition from './assets/hooks/useMousePosition';
 
@@ -38,28 +39,15 @@ function App() {
       };
    });
 
-   let list = useRef();
-   const [hoverState, setHoverState] = useState(false);
-   const { x, y } = useMousePosition();
-   const [listPosition, setListPosition] = useState({
-      top: 0,
-      left: 0,
-   });
+  
 
-   useEffect(() => {
-      setListPosition({
-         top: list.current.getBoundingClientRect().top,
-         left: list.current.getBoundingClientRect().left,
-      });
-   }, []);
+  
 
    return (
       <Router>
          <ScrollToTop />
          <motion.div
-            ref={list}
-            onHoverStart={() => setHoverState(true)}
-            // onHoverEnd={() => setHoverState(true)}
+            
             className='App'
          >
             <Header />
@@ -90,25 +78,15 @@ function App() {
                <p className='back-to-top__image'>↑</p>
             </motion.a>
          </motion.div>
-         <motion.svg
-            initial={{ opacity: 0 }}
-            animate={{
-               opacity: hoverState ? 1 : 0,
-               x: x - listPosition.left,
-               y: y - listPosition.top,
-            }}
-            transition={{
-               ease: Power3.easeOut,
-               // ease: Expo.easeOut,
-               duration: 0.08,
-            }}
-            className='cursor'
-            width='25'
-            height='25'
-            // viewBox='0 0 20 20'
-         >
-            <circle className='cursor__inner' cx='12' cy='12' r='8' />
-         </motion.svg>
+      
+          <AnimatedCursor
+      innerSize={10}
+      outerSize={10}
+      color='0, 0, 0'
+      outerAlpha={0.2}
+      innerScale={0.5}
+      outerScale={5}
+    />
       </Router>
    );
 }
