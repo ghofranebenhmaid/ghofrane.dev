@@ -23,8 +23,8 @@ const data = [
       src: TreasureHunt,
       name: 'logos',
       title: 'Treasure Hunt ',
-      discription:
-         ' Final project in HackYourFuture. A Treasure Hunt game for kids, developed with an idea from CodeArt during an 8-week period, where we planned, designed, developed and deployed the game using Reactjs. The game are meant for kids parties, where an adult (host) can create a game for the kids, with a theme. The host can create posts and questions.The kids have to find the posts and answer the questions. ',
+      //  discription:
+      //     'Final project in HackYourFuture. A Treasure Hunt game for kids, developed with an idea from CodeArt during an 8-week period, where we planned, designed, developed and deployed the game using Reactjs. The game are meant for kids parties, where an adult (host) can create a game for the kids, with a theme. The host can create posts and questions.The kids have to find the posts and answer the questions. ',
       language: ['HTML', 'CSS', 'JavaScript', 'Nodejs', 'React'],
    },
    {
@@ -33,8 +33,8 @@ const data = [
 
       codeSource: 'https://github.com/ghofranebenhmaid/mealinfo',
       title: 'mealinfo:',
-      discription:
-         'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      // discription:
+      //    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       language: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'Nodejs/Express'],
       web: 'https://hyf-meal-sharing-ghofrane.herokuapp.com/',
    },
@@ -44,8 +44,8 @@ const data = [
       codeSource:
          'https://github.com/ghofranebenhmaid/Projects/tree/master/ShoppingCart',
       title: 'Shopping Cart ',
-      discription:
-         'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      // discription:
+      //    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       language: ['HTML', 'SCSS', 'JavaScript'],
       web:
          'https://htmlpreview.github.io/?https://github.com/ghofranebenhmaid/Projects/blob/master/ShoppingCart/index.html',
